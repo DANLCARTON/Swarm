@@ -83,5 +83,18 @@ def updateDB():
     print("last", nTweets, "in DB are classified")    
     print("db updated")
 
+def testText(text):
+    docs_new = []
+    docs_new.append(text)
+    # print(docs_new)
+    # Vectorise the tweets
+    # ------------------------------------------------------------------------------
+    X_new_tfidf = vectorizer.transform(docs_new)
+    print("XFT", X_new_tfidf)
+    # Predict
+    # ------------------------------------------------------------------------------
+    predicted = clf_logit.predict(X_new_tfidf)
+    print("predicted : ", predicted)
+
 if __name__ == "__main__":
     updateDB()
