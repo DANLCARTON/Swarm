@@ -86,12 +86,7 @@ def updateDB():
 def testText(text):
     docs_new = []
     docs_new.append(text)
-    # print(docs_new)
-    # Vectorise the tweets
-    # ------------------------------------------------------------------------------
     X_new_tfidf = vectorizer.transform(docs_new)
-    # Predict
-    # ------------------------------------------------------------------------------
     predicted = clf_logit.predict(X_new_tfidf)
     if (predicted == 0):
         print ("category : ", "none")
