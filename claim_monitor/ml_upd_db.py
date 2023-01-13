@@ -48,7 +48,7 @@ def testText(text):
     elif (predicted == 4):
         print("category : ", "4 → there is a hiatus in warning")
     elif (predicted == 5):
-        print("category : ", "5 → sea level rise in exaggerated")
+        print("category : ", "5 → sea level rise is exaggerated")
     elif (predicted == 6):
         print("category : ", "6 → extremes aren't increasing")
     elif (predicted == 7):
