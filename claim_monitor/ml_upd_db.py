@@ -14,7 +14,6 @@ from sklearn import preprocessing
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 import numpy as np
-import ml_utils as u
 import pickle
 from pymongo import MongoClient
 import db as d
