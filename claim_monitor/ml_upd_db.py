@@ -16,7 +16,6 @@ from sklearn.linear_model import LogisticRegression
 import numpy as np
 import pickle
 from pymongo import MongoClient
-import db as d
 
 nTweets = 400 # Limit for the number of collected tweets
 
