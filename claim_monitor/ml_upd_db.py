@@ -10,12 +10,7 @@ For information on usage and redistribution, see <https://github.com/traviscoan/
 # ML CLASSIFIER AND DB UPDATER
 # ----------------------------------------------------------------------
 import subprocess
-from sklearn import preprocessing
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-import numpy as np
 import pickle
-from pymongo import MongoClient
 
 nTweets = 400 # Limit for the number of collected tweets
 
@@ -36,7 +31,7 @@ def testText(text):
     X_new_tfidf = vectorizer.transform(docs_new)
     predicted = clf_logit.predict(X_new_tfidf)
     if (predicted == 0):
-        print ("category : ", "0_0 → none")
+        print("category : ", "0_0 → none")
     elif (predicted == 1):
         print("category : ", "1_1 → ice isn't melting")
     elif (predicted == 2):
