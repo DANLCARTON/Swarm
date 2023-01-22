@@ -1,6 +1,5 @@
 import pickle
 import re
-import ml_upd_db as mud
 
 with open("data/model.pkl", 'rb') as f:
     logit = pickle.load(f)
