@@ -16,7 +16,7 @@ def searchKeywords(keywords, tweets):
         iter = 0
         for tweet in tweets:
             iter += keywordIterations(keyword, tweet)
-        if iter != 0
+        if iter != 0:
             print(keyword, "appears", iter, "time(s)")
     print("all the keywords that are not mentioned are those that not appear in any tweet.")
 
