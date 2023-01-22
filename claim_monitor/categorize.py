@@ -1,5 +1,8 @@
 import pickle
 import re
+import warnings
+
+warnings.warn("ignore")
 
 with open("data/model.pkl", 'rb') as f:
     logit = pickle.load(f)
