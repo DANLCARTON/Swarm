@@ -50,7 +50,7 @@ def testText(text):
     elif (predicted == 15):
         print("category : ", "4_5 → we need energy")
     elif (predicted == 16):
-        print("category : ", "5_1 → science iss unreliable")
+        print("category : ", "5_1 → science is unreliable")
     elif (predicted == 17):
         print("category : ", "5_2 → climate movement is unreliable")
     else:
