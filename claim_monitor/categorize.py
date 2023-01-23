@@ -26,9 +26,9 @@ def testText(text):
     elif (predicted == 3):
         print("category : ", "1_3 → weather is cold")
     elif (predicted == 4):
-        print("category : ", "1_4 → there is a hiatus in warning")
+        print("category : ", "1_4 → there is a hiatus in warming")
     elif (predicted == 5):
-        print("category : ", "1_6 → sea level rise is exaggerated")
+        print("category : ", "1_6 → sea-level rise is exaggerated")
     elif (predicted == 6):
         print("category : ", "1_7 → extremes aren't increasing")
     elif (predicted == 7):
@@ -50,7 +50,7 @@ def testText(text):
     elif (predicted == 15):
         print("category : ", "4_5 → we need energy")
     elif (predicted == 16):
-        print("category : ", "5_1 → science in unreliable")
+        print("category : ", "5_1 → science iss unreliable")
     elif (predicted == 17):
         print("category : ", "5_2 → climate movement is unreliable")
     else:
