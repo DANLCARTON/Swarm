@@ -1,8 +1,11 @@
 import pickle
 import re
 import warnings
+from sklearn import preprocessing
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
 
-warnings.warn("ignore")
+warnings.filterwarnings("ignore")
 
 with open("data/model.pkl", 'rb') as f:
     logit = pickle.load(f)
