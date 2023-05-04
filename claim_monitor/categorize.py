@@ -29,7 +29,7 @@ def testText(text):
     elif (predicted == 3):
         print("category : ", "1_3 → weather is cold")
     elif (predicted == 4):
-        print("category : ", "1_4 → there is a hiatus in warning")
+        print("category : ", "1_4 → there is a hiatus in warming")
     elif (predicted == 5):
         print("category : ", "1_6 → sea level rise is exaggerated")
     elif (predicted == 6):
